@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  api:
+    build: ./api
+    imagename: nmatsui/hello-world-api
+    ports:
+      - "3000:3000"
+    deploy:
+      replicas: 3
+      
